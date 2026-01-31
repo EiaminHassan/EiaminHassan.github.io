@@ -1,0 +1,282 @@
+/* =========================
+   Problem Solving Experience Section Styles
+   ========================= */
+
+.competitive-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+/* Two-Column Grid Layout */
+.competitive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Subsection Titles */
+.subsection-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.01em;
+}
+
+/* -------------------------
+   Contest Achievements (Left Column)
+   ------------------------- */
+.competitive-achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.achievement-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.achievement-item:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.achievement-link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.achievement-link:hover {
+  color: #4169e1;
+  text-decoration: none;
+}
+
+.achievement-description {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* -------------------------
+   Profiles & Rankings (Right Column)
+   ------------------------- */
+.competitive-profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile-platform {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.profile-handle {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+  font-weight: 400;
+}
+
+.profile-link {
+  color: #4169e1;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.profile-link:hover {
+  color: #3457c4;
+  text-decoration: underline;
+}
+
+.rating-badge {
+  display: inline-block;
+  background: #4169e1;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: background 0.2s ease;
+  width: fit-content;
+}
+
+.rating-badge:hover {
+  background: #3457c4;
+}
+
+/* -------------------------
+   Dark Mode - Problem Solving Section
+   ------------------------- */
+body.dark-mode .competitive-section {
+  border-top-color: #334155;
+}
+
+body.dark-mode .subsection-title {
+  color: #ffffff;
+}
+
+body.dark-mode .achievement-item {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .achievement-item:hover {
+  border-color: #475569;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .achievement-title {
+  color: #ffffff;
+}
+
+body.dark-mode .achievement-link {
+  color: #ffffff;
+}
+
+body.dark-mode .achievement-link:hover {
+  color: #60a5fa;
+}
+
+body.dark-mode .achievement-description {
+  color: #94a3b8;
+}
+
+body.dark-mode .profile-platform {
+  color: #ffffff;
+}
+
+body.dark-mode .profile-handle {
+  color: #94a3b8;
+}
+
+body.dark-mode .profile-link {
+  color: #60a5fa;
+}
+
+body.dark-mode .profile-link:hover {
+  color: #3b82f6;
+}
+
+body.dark-mode .rating-badge {
+  background: #3b82f6;
+}
+
+body.dark-mode .rating-badge:hover {
+  background: #2563eb;
+}
+
+/* -------------------------
+   Responsive Design - Problem Solving
+   ------------------------- */
+@media (max-width: 1024px) {
+  .competitive-section {
+    padding: 3rem 2rem;
+  }
+
+  .competitive-grid {
+    gap: 2.5rem;
+  }
+
+  .subsection-title {
+    font-size: 22px;
+  }
+
+  .achievement-title {
+    font-size: 17px;
+  }
+
+  .achievement-description {
+    font-size: 15px;
+  }
+
+  .profile-platform {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 968px) {
+  .competitive-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .achievement-item {
+    padding: 1.25rem;
+  }
+
+  .achievement-title {
+    font-size: 16px;
+  }
+
+  .profile-platform {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .competitive-section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .competitive-grid {
+    gap: 2.5rem;
+  }
+
+  .subsection-title {
+    font-size: 20px;
+  }
+
+  .achievement-item {
+    padding: 1rem;
+  }
+
+  .achievement-title {
+    font-size: 15px;
+  }
+
+  .achievement-description {
+    font-size: 14px;
+  }
+
+  .profile-platform {
+    font-size: 17px;
+  }
+
+  .profile-handle {
+    font-size: 15px;
+  }
+
+  .rating-badge {
+    font-size: 13px;
+    padding: 0.4rem 1rem;
+  }
+}

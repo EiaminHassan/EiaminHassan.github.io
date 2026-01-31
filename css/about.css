@@ -1,0 +1,322 @@
+/* =========================
+   About Section Styles
+   ========================= */
+
+/* About Page */
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2.5rem;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.about-hero-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.about-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  flex-shrink: 0;
+}
+
+.about-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0;
+}
+
+.about-name {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.about-title {
+  font-size: 22px;
+  color: #666666;
+  margin: 0;
+  font-weight: 400;
+}
+
+.about-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  color: #666666;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 22px;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+}
+
+.social-link:hover {
+  color: #4169e1;
+  background: none;
+}
+
+.about-hero-right {
+  margin-left: auto;
+  padding-top: 0;
+  flex-shrink: 0;
+}
+
+/* Content Grid */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 3rem;
+  align-items: start;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Main About Text */
+.about-main {
+  max-width: 100%;
+}
+
+.about-paragraph {
+  font-size: 20px;
+  line-height: 1.65;
+  color: #333333;
+  margin: 0;
+}
+
+/* Education Card */
+.about-side {
+  position: sticky;
+  top: 120px;
+  margin-left: 0;
+}
+
+.card {
+  background: #f8f9fa;
+  border: none;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: none;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.01em;
+}
+
+.edu-item {
+  margin-bottom: 1.5rem;
+}
+
+.edu-item:last-child {
+  margin-bottom: 0;
+}
+
+.edu-degree {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.edu-meta {
+  font-size: 17px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* -------------------------
+   Dark Mode - About Section
+   ------------------------- */
+body.dark-mode .about-hero {
+  border-bottom-color: #334155;
+}
+
+body.dark-mode .about-avatar {
+  border-color: #334155;
+}
+
+body.dark-mode .about-name {
+  color: #ffffff;
+}
+
+body.dark-mode .about-title {
+  color: #94a3b8;
+}
+
+body.dark-mode .social-link {
+  color: #94a3b8;
+}
+
+body.dark-mode .social-link:hover {
+  color: #60a5fa;
+  background: none;
+}
+
+body.dark-mode .about-paragraph {
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background: #1e293b;
+}
+
+body.dark-mode .card-title {
+  color: #ffffff;
+}
+
+body.dark-mode .edu-degree {
+  color: #ffffff;
+}
+
+body.dark-mode .edu-meta {
+  color: #94a3b8;
+}
+
+/* -------------------------
+   Responsive Design - About
+   ------------------------- */
+@media (max-width: 1024px) {
+  .about-page {
+    padding: 2.5rem 2rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr 380px;
+    gap: 2.5rem;
+  }
+
+  .about-name {
+    font-size: 40px;
+  }
+  
+  .about-paragraph {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-side {
+    position: static;
+  }
+
+  .about-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .about-hero-left {
+    align-items: flex-start;
+  }
+
+  .about-hero-right {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-name {
+    font-size: 36px;
+  }
+  
+  .about-paragraph {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-page {
+    padding: 2rem 1.25rem;
+  }
+
+  .about-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-name {
+    font-size: 30px;
+  }
+
+  .about-title {
+    font-size: 18px;
+  }
+
+  .about-paragraph {
+    font-size: 17px;
+  }
+
+  .about-hero {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-content {
+    gap: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .edu-degree {
+    font-size: 16px;
+  }
+  
+  .edu-meta {
+    font-size: 15px;
+  }
+
+  .social-link {
+    font-size: 20px;
+  }
+}

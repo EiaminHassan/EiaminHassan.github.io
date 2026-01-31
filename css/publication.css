@@ -1,0 +1,170 @@
+/* =========================
+   Publications Section Styles
+   ========================= */
+
+.publications-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.publications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Publication Card */
+.publication-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.2s ease;
+}
+
+.publication-card:hover {
+  border-color: #d1d5db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.publication-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.publication-venue {
+  font-size: 16px;
+  color: #666666;
+  margin: 0 0 1rem 0;
+  font-weight: 400;
+}
+
+.publication-abstract {
+  font-size: 17px;
+  color: #000000;
+  line-height: 1.6;
+  margin: 0 0 1.25rem 0;
+}
+
+/* Tags */
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #4169e1;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border-radius: 20px;
+  transition: background 0.2s ease;
+}
+
+.tag:hover {
+  background: #3457c4;
+}
+
+/* -------------------------
+   Dark Mode - Publications
+   ------------------------- */
+body.dark-mode .publications-section {
+  border-top-color: #334155;
+}
+
+body.dark-mode .publication-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+body.dark-mode .publication-card:hover {
+  border-color: #475569;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .publication-title {
+  color: #ffffff;
+}
+
+body.dark-mode .publication-venue {
+  color: #94a3b8;
+}
+
+body.dark-mode .publication-abstract {
+  color: #ffffff;
+}
+
+body.dark-mode .tag {
+  background: #3b82f6;
+}
+
+body.dark-mode .tag:hover {
+  background: #2563eb;
+}
+
+/* -------------------------
+   Responsive Design - Publications
+   ------------------------- */
+@media (max-width: 1024px) {
+  .publications-section {
+    padding: 3rem 2rem;
+  }
+
+  .publication-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 968px) {
+  .publication-card {
+    padding: 1.5rem;
+  }
+
+  .publication-title {
+    font-size: 19px;
+  }
+
+  .publication-abstract {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .publications-section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .publication-card {
+    padding: 1.25rem;
+  }
+
+  .publication-title {
+    font-size: 18px;
+  }
+
+  .publication-venue {
+    font-size: 15px;
+  }
+
+  .publication-abstract {
+    font-size: 15px;
+  }
+
+  .tag {
+    font-size: 13px;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .publications-container {
+    gap: 1.5rem;
+  }
+}
