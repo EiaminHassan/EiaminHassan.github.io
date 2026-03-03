@@ -6,6 +6,7 @@
   <title>Eiamin Hassan Shanto - Portfolio</title>
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/skills.css" />
   <link rel="stylesheet" href="css/publication.css" />
   <link rel="stylesheet" href="css/project.css" />
   <link rel="stylesheet" href="css/competitive.css" />
@@ -25,6 +26,7 @@
 
     <ul class="about-navbar-links">
       <li><a href="#about" class="nav-link active">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#publications" class="nav-link">Publications</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li>
@@ -43,6 +45,9 @@
 <main id="main-content">
   <!-- About Section (loaded from about.html) -->
   <div id="about-section"></div>
+
+  <!-- Skills Section (loaded from skills.html) -->
+  <div id="skills-section"></div>
 
   <!-- Publications Section (loaded from publication.html) -->
   <div id="publications-section"></div>
@@ -115,6 +120,7 @@
   async function loadAllSections() {
     await Promise.all([
       loadSection('about-section', 'sections/about.html'),
+      loadSection('skills-section', 'sections/skills.html'),
       loadSection('publications-section', 'sections/publication.html'),
       loadSection('projects-section', 'sections/project.html'),
       loadSection('competitive-section', 'sections/competitive.html'),
